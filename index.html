@@ -49,12 +49,12 @@
     <script>
 
         let searchBox = document.querySelector('#Search-code');
-        let images = document.querySelectorAll('.container .box');
+        let box = document.querySelectorAll('.container .box');
         
         searchBox.oninput = () =>{
-           images.forEach(hide => hide.style.display = 'none');
+           box.forEach(hide => hide.style.display = 'none');
            let value = searchBox.value;
-           images.forEach(filter =>{
+           box.forEach(filter =>{
               let title = filter.getAttribute('data-title');
               if(value == title){
                  filter.style.display = 'block';
