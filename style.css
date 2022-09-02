@@ -294,8 +294,27 @@ label .fa-magnifying-glass{
         position: relative;
         right: 18.8rem;
     }
+    label input{
+       box-shadow: 0 0 0 10px #242424;
+    }
+    label i{
+        z-index: 100;
+    }
     .logo{
         position: relative;
         left: 18.8rem; 
+    }
+}
+@media (max-width: 378px){
+    .nav{
+        padding: 0 6%;
+    }
+    label{
+        position: relative;
+        right: 19.8rem;
+    }
+    .logo{
+        position: relative;
+        left: 19.8rem; 
     }
 }
