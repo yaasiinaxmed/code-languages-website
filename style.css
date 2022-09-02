@@ -292,7 +292,7 @@ label .fa-magnifying-glass{
 @media (max-width: 406px){
     label{
         position: relative;
-        right: 18.8rem;
+        right: 17.8rem;
     }
     label input{
        box-shadow: 0 0 0 10px #242424;
@@ -311,7 +311,7 @@ label .fa-magnifying-glass{
     }
     label{
         position: relative;
-        right: 19.8rem;
+        right: 18.8rem;
     }
     .logo{
         position: relative;
