@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Viewport" content="width=device-width, scale-1.0">
+    <title>Code languages</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shorcut icon" href="icon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="nav">
+      <div class="logo">
+       <i class="fa-solid fa-code"></i>
+       <h1>Code language</h1>
+      </div>
+      <input type="checkbox" id="check">
+      <label for="check">
+        <input type="'text" placeholder="Search" id="Search-code">
+        <i class="fas fa-magnifying-glass"></i>
+      </label>
+    </div>
+    <div class="container">
+        <div class="box" data-title="html" style="--i:0">html</div>
+        <div class="box" data-title="css" style="--i:1">css</div>
+        <div class="box" data-title="Javascript" style="--i:2">Javascript</div>
+        <div class="box" data-title="java" style="--i:3">java</div>
+        <div class="box" data-title="php" style="--i:4">php</div>
+        <div class="box" data-title="sass" style="--i:5">Sass</div>
+        <div class="box" data-title="react" style="--i:6">React</div>
+        <div class="box" data-title="c" style="--i:7">C</div>
+        <div class="box" data-title="c++" style="--i:8">c++</div>
+        <div class="box" data-title="c#" style="--i:9">C#</div>
+        <div class="box" data-title="Mysql" style="--i:10">Mysql</div>
+        <div class="box" data-title="R" style="--i:11">R</div>
+        <div class="box" data-title="node.js" style="--i:12">node.js</div>
+        <div class="box" data-title="kotlin" style="--i:13">kotlin</div>
+        <div class="box" data-title="Sql" style="--i:14">Sql</div>
+        <div class="box" data-title="python" style="--i:15">python</div>
+        <div class="box" data-title="jquery" style="--i:16">jquery</div>
+        <div class="box" data-title="Bootstrap" style="--i:17">Bootstrap</div>
+        <div class="box" data-title="JSON" style="--i:18">JSON</div>
+        <div class="box" data-title="angularjs" style="--i:19">angularjs</div>
+        <div class="box" data-title="Go" style="--i:20">Go</div>
+        <div class="box" data-title="typescript" style="--i:21">typescript</div>
+        <div class="box" data-title="django" style="--i:22">django</div>
+    </div>
+
+    <script>
+
+        let searchBox = document.querySelector('#Search-code');
+        let images = document.querySelectorAll('.container .box');
+        
+        searchBox.oninput = () =>{
+           images.forEach(hide => hide.style.display = 'none');
+           let value = searchBox.value;
+           images.forEach(filter =>{
+              let title = filter.getAttribute('data-title');
+              if(value == title){
+                 filter.style.display = 'block';
+              }
+              if(searchBox.value == ''){
+                 filter.style.display = 'block';
+              }
+           });
+        };
+        
+        </script>
+
+</body>
+</html>
