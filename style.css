@@ -81,6 +81,13 @@ label .fa-magnifying-glass{
     padding: 30px;
     border-radius: 5px;
     cursor: pointer;
+    animation: box .2s linear;
+}
+@keyframes box {
+  0%{
+    transform: scale(.5) translateY(-10px);
+    opacity: 0;
+  }
 }
 .container .box:hover{
     background:#9ed8fc;
