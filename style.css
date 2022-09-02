@@ -36,7 +36,7 @@ label{
     display: flex;
 }
 label input{
-    width: 490px;
+    width: 480px;
     padding: 7px 10px;
     outline: none;
     border-radius: 5px 0 0 5px;
@@ -296,6 +296,6 @@ label .fa-magnifying-glass{
     }
     .logo{
         position: relative;
-        left: 18.8rem;
+        left: 18.8rem; 
     }
 }
